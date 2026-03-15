@@ -114,7 +114,7 @@ let product = document.getElementById("product").value;
 let flavour = document.getElementById("flavour").value;
 let quantity = document.getElementById("quantity").value;
 let pickupDate = document.getElementById("pickupDate").value;
-let instructions = document.getElementById("instructions").value;
+let paymentMethod = document.querySelector('input[name="paymentMethod"]:checked').value;
 
 let order = {
 id: Date.now(),
@@ -125,7 +125,10 @@ product: product,
 flavour: flavour,
 quantity: quantity,
 pickupDate: pickupDate,
-instructions: instructions
+instructions: instructions,
+paymentMethod: paymentMethod,
+status: "Pending",
+feedback: ""
 };
 
 let orders = JSON.parse(localStorage.getItem("orders")) || [];
@@ -146,6 +149,31 @@ document.getElementById("confirmation").style.display="none";
 
 }
 
+function showPaymentInfo(){
+
+let method = document.querySelector('input[name="paymentMethod"]:checked').value;
+
+let paymentInfo = document.getElementById("paymentInfo");
+
+if(method === "Mobile Money"){
+
+paymentInfo.innerHTML = "Send payment to Mobile Money number: +267 71 611 389";
+
+}
+
+else if(method === "Bank Transfer"){
+
+paymentInfo.innerHTML = "Bank: FNB | Account Number: 1234567890";
+
+}
+
+else{
+
+paymentInfo.innerHTML = "Payment will be made when collecting the order.";
+
+}
+
+}
 </script>
 
 </head>
@@ -239,6 +267,8 @@ document.getElementById("confirmation").style.display="none";
 <option>Vanilla</option>
 <option>Chocolate</option>
 <option>Red Velvet</option>
+<option>Caramel</option>
+<option>Lemon</option>
 <option>Strawberry</option>
 </select>
 
@@ -247,6 +277,25 @@ document.getElementById("confirmation").style.display="none";
 
 <label>Pickup Date</label>
 <input type="date" id="pickupDate" required>
+
+<label>Choose Payment Method</label>
+
+<input type="radio" name="paymentMethod" value="Cash on Pickup" onclick="showPaymentInfo()" required>
+Cash on Pickup
+
+<br>
+
+<input type="radio" name="paymentMethod" value="Mobile Money" onclick="showPaymentInfo()">
+Mobile Money
+
+<br>
+
+<input type="radio" name="paymentMethod" value="Bank Transfer" onclick="showPaymentInfo()">
+Bank Transfer
+
+<br><br>
+
+<div id="paymentInfo"></div>
 
 <label>Additional Instructions</label>
 <textarea id="instructions"></textarea>
@@ -262,7 +311,10 @@ document.getElementById("confirmation").style.display="none";
 <h2>Order Submitted</h2>
 
 <p>Thank you for choosing Heavenly Treats Bakels.  
-We will contact you to confirm your order details.</p>
+We will contact you to confirm your order details.
+
+Please note that 45% deposit is required to secure your order.
+Full amount shall be payed upon pickup.</p>
 
 <button onclick="closePopup()">Close</button>
 
