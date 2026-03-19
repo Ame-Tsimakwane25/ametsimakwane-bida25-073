@@ -176,3 +176,54 @@ table tr:nth-child(even){
     height: 260px;
     object-fit: cover;
 }
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item{
+    text-align: center;
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.gallery-item p{
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.lightbox{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    text-align: center;
+    padding-top: 40px;
+    z-index: 2000;
+}
+
+.lightbox img{
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+
+.close-btn{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}

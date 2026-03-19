@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Gallery - Heavenly Treatz Bakels</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function openLightbox(imageSrc, imageName){
+            document.getElementById("lightbox").style.display = "block";
+            document.getElementById("lightbox-image").src = imageSrc;
+            document.getElementById("lightbox-caption").innerText = imageName;
+        }
+
+        function closeLightbox(){
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Heavenly Treatz Bakels</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Heavenly Treatz Bakels</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us.html">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="store.html">Store</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="place order.html">Place Order</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="customer-feedback.html">Customer Feedback</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="content-box">
+        <h2 class="gallery-title">Our Cake Gallery</h2>
+        <p class="text-center">
+            Here are some of the beautiful cakes we have made so far since starting our business.
+        </p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="Birthday Cake.jpeg" alt="Birthday Cake 1" onclick="openLightbox('cake1.jpg', 'Birthday Cake 1')">
+                <p>Birthday Cake 1</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Wedding Cake 1.jpeg" alt="Wedding Cake 1" onclick="openLightbox('cake2.jpg', 'Wedding Cake 1')">
+                <p>Wedding Cake 1</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Character Cake.jpeg" alt="Character Cake 1" onclick="openLightbox('cake3.jpg', 'Character Cake 1')">
+                <p>Character Cake 1</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Cupcake Set.jpeg" alt="Cupcake Set 1" onclick="openLightbox('cake4.jpg', 'Cupcake Set 1')">
+                <p>Cupcake Set 1</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Bento Pack 1.jpeg" alt="Bento Cake 1" onclick="openLightbox('cake5.jpg', 'Bento Cake 1')">
+                <p>Bento Cake 1</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Wedding Cake 2.jpeg" alt="Wedding Cake 2" onclick="openLightbox('cake6.jpg', 'Wedding Cake 2')">
+                <p>Wedding Cake 2</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Cartoon cake.jpeg" alt="Birthday Cake 2" onclick="openLightbox('cake7.jpg', 'Birthday Cake 2')">
+                <p>Birthday Cake 2</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Custom Cake 1.jpeg" alt="Custom Cake 1" onclick="openLightbox('cake8.jpg', 'Custom Cake 1')">
+                <p>Custom Cake 1</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Customized Cake.jpeg" alt="Cake Design 1" onclick="openLightbox('cake9.jpg', 'Cake Design 1')">
+                <p>Cake Design 1</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Girl Character cake.jpeg" alt="Cake Design 2" onclick="openLightbox('cake10.jpg', 'Cake Design 2')">
+                <p>Cake Design 2</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Cupcake Pack.jpeg" alt="Cake Design 3" onclick="openLightbox('cake11.jpg', 'Cake Design 3')">
+                <p>Cake Design 3</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Bento Pack 2.jpeg" alt="Cake Design 4" onclick="openLightbox('cake12.jpg', 'Cake Design 4')">
+                <p>Cake Design 4</p>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<div id="lightbox" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-image" src="" alt="Large Cake View">
+    <p id="lightbox-caption"></p>
+</div>
+
+<footer>
+    <p>&copy; 2026 Heavenly Treatz Bakels. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
