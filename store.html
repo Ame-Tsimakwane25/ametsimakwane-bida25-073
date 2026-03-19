@@ -7,101 +7,7 @@
 
     <!-- Bootstrap CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-
-body{
-font-family: Arial, sans-serif;
-background-image: url("Background.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-margin:0;
-color:#4b2c39;
-}
-
-header{
-background:#ffd6e8;
-padding:20px;
-text-align:center;
-}
-
-header h1{
-color:#7a1f4d;
-margin-bottom:10px;
-}
-
-nav a{
-margin:0 10px;
-text-decoration:none;
-color:#7a1f4d;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#c7387d;
-}
-
-main{
-width:90%;
-max-width:1000px;
-margin:30px auto;
-}
-
-h2{
-color:#8f2d56;
-}
-
-.contact-container{
-display:flex;
-gap:30px;
-flex-wrap:wrap;
-}
-
-.contact-box{
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0px 4px 10px rgba(0,0,0,0.1);
-flex:1;
-min-width:280px;
-}
-
-label{
-font-weight:bold;
-}
-
-input, textarea{
-width:100%;
-padding:10px;
-margin-top:5px;
-margin-bottom:15px;
-border:1px solid #ccc;
-border-radius:6px;
-}
-
-button{
-background:#c7387d;
-color:white;
-border:none;
-padding:10px 18px;
-border-radius:6px;
-cursor:pointer;
-}
-
-button:hover{
-background:#a62d67;
-}
-
-footer{
-background:#7a1f4d;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:40px;
-}
-
-</style>
+<link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
@@ -161,258 +67,224 @@ margin-top:40px;
     <h1>Our Store</h1>
     <p>Welcome to Heavenly Treatz Bakels store page. Here customers can view our cake menu, baking utensils, equipment, ingredients and baking lessons offered at our store.</p>
 
-    <h2>Cake Menu Price List</h2>
-    <table border="1">
+    <div class="content-container">
 
-<tr>
-<th>Product</th>
-<th>Price</th>
-</tr>
-<tr>
-<td>Customized Basic Cake</td>
-<td>P500</td>
-</tr>
+        <div class="content-box">
+            <h2>Cake Menu Price List</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Customized Basic Cake</td>
+                    <td>P500</td>
+                </tr>
+                <tr>
+                    <td>Customized Wedding Cakes</td>
+                    <td>P2000</td>
+                </tr>
+                <tr>
+                    <td>Customized Character Cakes</td>
+                    <td>P550</td>
+                </tr>
+                <tr>
+                    <td>6 Cupcakes Package</td>
+                    <td>P120</td>
+                </tr>
+                <tr>
+                    <td>12 Cupcakes Package</td>
+                    <td>P190</td>
+                </tr>
+                <tr>
+                    <td>6 Cakesicles</td>
+                    <td>P150</td>
+                </tr>
+                <tr>
+                    <td>Bento Package</td>
+                    <td>P350</td>
+                </tr>
+            </table>
+        </div>
 
-<tr>
-<td>Customized Wedding Cakes</td>
-<td>P2000</td>
-</tr>
+        <div class="content-box">
+            <h2>Baking Utensils</h2>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Cake Tins</td>
+                    <td>P100</td>
+                </tr>
+                <tr>
+                    <td>Mixing Bowls</td>
+                    <td>P80</td>
+                </tr>
+                <tr>
+                    <td>Measuring Cups and Spoons</td>
+                    <td>P35</td>
+                </tr>
+                <tr>
+                    <td>Spatulas</td>
+                    <td>P35</td>
+                </tr>
+                <tr>
+                    <td>Whisks</td>
+                    <td>P220</td>
+                </tr>
+                <tr>
+                    <td>Piping Bags and Nozzles</td>
+                    <td>P55</td>
+                </tr>
+                <tr>
+                    <td>Cake Boards</td>
+                    <td>P35</td>
+                </tr>
+                <tr>
+                    <td>Cake Turntables</td>
+                    <td>P150</td>
+                </tr>
+            </table>
+        </div>
 
-<tr>
-<td>Customized Character Cakes</td>
-<td>P550</td>
-</tr>
+        <div class="content-box">
+            <h2>Baking Equipment</h2>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Electric Mixer</td>
+                    <td>P650</td>
+                </tr>
+                <tr>
+                    <td>Oven</td>
+                    <td>P2500</td>
+                </tr>
+                <tr>
+                    <td>Blender</td>
+                    <td>P420</td>
+                </tr>
+                <tr>
+                    <td>Cooling Racks</td>
+                    <td>P110</td>
+                </tr>
+                <tr>
+                    <td>Fondant Smoother</td>
+                    <td>P75</td>
+                </tr>
+                <tr>
+                    <td>Cake Decorating Tools</td>
+                    <td>P130</td>
+                </tr>
+            </table>
+        </div>
 
-<tr>
-<td>6 Cupcakes Package</td>
-<td>P120</td>
-</tr>
+        <div class="content-box">
+            <h2>Baking Ingredients</h2>
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Flour (5kg)</td>
+                    <td>P199</td>
+                </tr>
+                <tr>
+                    <td>Sugar (5kg)</td>
+                    <td>P200</td>
+                </tr>
+                <tr>
+                    <td>Baking Powder</td>
+                    <td>P35</td>
+                </tr>
+                <tr>
+                    <td>Butter</td>
+                    <td>P55</td>
+                </tr>
+                <tr>
+                    <td>Eggs (Tray)</td>
+                    <td>P70</td>
+                </tr>
+                <tr>
+                    <td>Vanilla Essence</td>
+                    <td>P20</td>
+                </tr>
+                <tr>
+                    <td>Cocoa Powder</td>
+                    <td>P35</td>
+                </tr>
+                <tr>
+                    <td>Food Colouring</td>
+                    <td>P21</td>
+                </tr>
+                <tr>
+                    <td>Fondant</td>
+                    <td>P400</td>
+                </tr>
+                <tr>
+                    <td>Sprinkles</td>
+                    <td>P55</td>
+                </tr>
+                <tr>
+                    <td>Chocolate Chips</td>
+                    <td>P60</td>
+                </tr>
+                <tr>
+                    <td>Whipping Cream</td>
+                    <td>P75</td>
+                </tr>
+            </table>
+        </div>
 
-<tr>
-<td>12 Cupcakes Package</td>
-<td>P190</td>
-</tr>
+        <div class="content-box">
+            <h2>Baking Lessons</h2>
+            <p>At Heavenly Treats Bakels, we also offer baking lessons at a fee for people who want to learn how to bake and decorate cakes.</p>
 
-<tr>
-<td>6 Cakesicles</td>
-<td>P150</td>
-</tr>
+            <table>
+                <tr>
+                    <th>Lesson Type</th>
+                    <th>Description</th>
+                    <th>Fee</th>
+                </tr>
+                <tr>
+                    <td>Basic Baking Lesson</td>
+                    <td>Introduction to cake baking and preparation</td>
+                    <td>P800</td>
+                </tr>
+                <tr>
+                    <td>Cupcake Decorating Lesson</td>
+                    <td>Learn how to decorate cupcakes</td>
+                    <td>P450</td>
+                </tr>
+                <tr>
+                    <td>Fondant Cake Decorating</td>
+                    <td>Learn how to decorate cakes with fondant</td>
+                    <td>P670</td>
+                </tr>
+                <tr>
+                    <td>Advanced Cake Baking</td>
+                    <td>Learn layered cakes and cake presentation</td>
+                    <td>P500</td>
+                </tr>
+                <tr>
+                    <td>Full Baking Course</td>
+                    <td>Learn all basic, decorations, layering techniques and get with Certification and starter pack</td>
+                    <td>P2000</td>
+                </tr>
+            </table>
 
-<tr>
-<td>Bento Package</td>
-<td>P350</td>
-</tr>
+            <p>Customers who are interested in baking lessons or baking supplies are welcome to visit our store or contact us for more information.</p>
+            <p>All customers should note that these prices differ depending on the quantity and specific items selected.</p>
+            <p>Any other product apart from the cakes will be bought instore.</p>
+        </div>
 
-</table>
-
-<h2>Baking Utensils</h2>
-<table border="1">
-
-<tr>
-<th>Item</th>
-<th>Price</th>
-</tr>
-
-<tr>
-<td>Cake Tins</td>
-<td>P100</td>
-</tr>
-
-<tr>
-<td>Mixing Bowls</td>
-<td>P80</td>
-</tr>
-
-<tr>
-<td>Measuring Cups and Spoons</td>
-<td>P35</td>
-</tr>
-
-<tr>
-<td>Spatulas</td>
-<td>P35</td>
-</tr>
-
-<tr>
-<td>Whisks</td>
-<td>P220</td>
-</tr>
-
-<tr>
-<td>Piping Bags and Nozzles</td>
-<td>P55</td>
-</tr>
-
-<tr>
-<td>Cake Boards</td>
-<td>P35</td>
-</tr>
-
-<tr>
-<td>Cake Turntables</td>
-<td>P150</td>
-</tr>
-
-</table>
-
-<h2>Baking Equipment</h2>
-
-<table border="1">
-
-<tr>
-<th>Item</th>
-<th>Price</th>
-</tr>
-
-<tr>
-<td>Electric Mixer</td>
-<td>P650</td>
-</tr>
-
-<tr>
-<td>Oven</td>
-<td>P2500</td>
-</tr>
-
-<tr>
-<td>Blender</td>
-<td>P420</td>
-</tr>
-
-<tr>
-<td>Cooling Racks</td>
-<td>P110</td>
-</tr>
-
-<tr>
-<td>Fondant Smoother</td>
-<td>P75</td>
-</tr>
-
-<tr>
-<td>Cake Decorating Tools</td>
-<td>P130</td>
-</tr>
-
-</table>
-
-<h2>Baking Ingredients</h2>
-
-<table border="1">
-
-<tr>
-<th>Ingredient</th>
-<th>Price</th>
-</tr>
-
-<tr>
-<td>Flour (5kg)</td>
-<td>P199</td>
-</tr>
-
-<tr>
-<td>Sugar(5kg)</td>
-<td>P200</td>
-</tr>
-
-<tr>
-<td>Baking Powder</td>
-<td>P35</td>
-</tr>
-
-<tr>
-<td>Butter</td>
-<td>P55</td>
-</tr>
-
-<tr>
-<td>Eggs (Tray)</td>
-<td>P70</td>
-</tr>
-
-<tr>
-<td>Vanilla Essence</td>
-<td>P20</td>
-</tr>
-
-<tr>
-<td>Cocoa Powder</td>
-<td>P35</td>
-</tr>
-
-<tr>
-<td>Food Colouring</td>
-<td>P21</td>
-</tr>
-
-<tr>
-<td>Fondant</td>
-<td>P400</td>
-</tr>
-
-<tr>
-<td>Sprinkles</td>
-<td>P55</td>
-</tr>
-
-<tr>
-<td>Chocolate Chips</td>
-<td>P60</td>
-</tr>
-
-<tr>
-<td>Whipping Cream</td>
-<td>P75</td>
-</tr>
-
-</table>
-
-<h2>Baking Lessons</h2>
-
-<p>At Heavenly Treats Bakels, we also offer baking lessons at a fee for people who want to learn how to bake and decorate cakes.</p>
-
-<table border="1">
-
-<tr>
-<th>Lesson Type</th>
-<th>Description</th>
-<th>Fee</th>
-</tr>
-
-<tr>
-<td>Basic Baking Lesson</td>
-<td>Introduction to cake baking and preparation</td>
-<td>P800</td>
-</tr>
-
-<tr>
-<td>Cupcake Decorating Lesson</td>
-<td>Learn how to decorate cupcakes</td>
-<td>P450</td>
-</tr>
-
-<tr>
-<td>Fondant Cake Decorating</td>
-<td>Learn how to decorate cakes with fondant</td>
-<td>P670</td>
-</tr>
-
-<tr>
-<td>Advanced Cake Baking</td>
-<td>Learn layered cakes and cake presentation</td>
-<td>P500</td>
-</tr>
-
-<tr>
-<td>Full Baking Course</td>
-<td>Learn all basic, decorations, layering techniques and get with Certification and starter pack</td>
-<td>P2000</td>
-</tr>
-</table>
-
-<p>Customers who are interested in baking lessons or baking supplies are welcome to visit our store or contact us for more information.</p>
-<p>All customers should note that these prices differ depending on the quantity and specific items selected.</p>
-<p>Any other product apart from the Cakes will be bought instore</p>
+    </div>
+</main>
 
  <footer>
         <p>&copy; 2026 Heavenly Treatz Bakels. All rights reserved.</p>
